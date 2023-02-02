@@ -18,6 +18,10 @@ namespace CoursesWebsite.Controllers
             return View();
         }
 
+        public IActionResult Priv()
+        {
+            return View();
+        }
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
