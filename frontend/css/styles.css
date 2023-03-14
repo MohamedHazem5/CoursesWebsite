@@ -54,6 +54,7 @@ nav{
 .dropdown-menu:hover .dropdown a {background-color: #3e8e41;}
 .navbar .logo img{
     position: absolute;
+    width:120px;
     top:0px;
     box-shadow: 5px 0 10px rgb(0 0 0 / 7%);
     z-index: 1;
@@ -61,7 +62,7 @@ nav{
 }
 @media (max-width:767px){
     .navbar .logo img{
-        max-width:120px;
+        max-width:70px;
     }
 }
 @media (max-width:991px){
@@ -69,7 +70,7 @@ nav{
         padding-bottom: 0;
     }
     .navbar .logo img{
-        max-width:120px;
+        max-width:80px;
     }
     .navbar .navbar-collapse{
         margin-top:5px;
