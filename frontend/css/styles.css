@@ -215,6 +215,10 @@ nav{
     -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
+.popular .Categories .box p{
+    font-style: italic;
+    font-weight: 500;
+}
 .popular .Categories .box:hover{
     background-color: #fe630e;
     border:#fff
@@ -225,3 +229,38 @@ nav{
 }
 /* End popular */
 
+/* Start Flow  */
+.flow{
+    position: relative;
+    padding: 50px 0;
+    height:50vh;
+    background-image: url(../images/teaching-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.flow::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.flow .flow-img{
+    position: absolute;
+    bottom:0;
+}
+@media (max-width:991px){
+    .flow .flow-img{
+        display: none;
+    }
+}
+.flow .content{
+    position: absolute;
+    display: block;
+    color: #fff;
+    margin: 100px 0;
+}
+/* End Flow  */
