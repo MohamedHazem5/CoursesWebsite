@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+html{
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: "Roboto", sans-serif;
+    
+}
+h1 
+{
+    font-size: 60px; 
+}
+@media (min-width: 768px) and (max-width: 991.98px) 
+{
+    h1 
+    {
+        font-size: 48px; 
+    } 
+}
+@media (max-width: 767.98px) 
+{
+    h1 
+    {
+        font-size: 36px; 
+    } 
+}
+  
+h2 
+{
+    font-size: 42px; 
+}
+@media (max-width: 767.98px) 
+{
+    h2 
+    {
+        font-size: 30px; 
+    } 
+}
+  
+h3 
+{
+    font-size: 30px; 
+}
+@media (max-width: 767.98px) 
+{
+    h3 
+    {
+        font-size: 24px; 
+    } 
+}
+  
+h4 
+{
+    font-size: 24px; 
+}
+@media (max-width: 767.98px) 
+{
+    h4 
+    {
+        font-size: 20px; 
+    } 
+}
+  
+  h5 
+{
+    font-size: 20px; 
+}
+@media (max-width: 767.98px) 
+{
+      h5 {
+        font-size: 18px; } 
+}
+  
+h6 
+{
+    font-size: 16px;
+    margin-bottom: 0; 
+}
+
+h1,h2,h3,h4,h5,h6 
+{
+  color: #102039;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 1.2;
+  margin-bottom: 0; 
+}
+
+p {
+    color: #606060;
+    margin-bottom: 10px; 
+}
+/*End of General section*/
+/*******************************/
+/*Meet Our Experts Section*/
+.card-style
+{
+    box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
+    margin-bottom: 30px;
+    text-align: center;
+    border: 0px;
+}
+
+
+.card_image
+{
+    position: relative;
+    overflow: hidden;
+}
+.card_image .hover_state
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.card_image .hover_state ul 
+{
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    padding-left: 0px !important;
+    padding-bottom: 0px !important;
+    transition: all 0.3s ease-in;
+    
+    
+}
+.card_image .hover_state ul li
+{
+    display: inline;
+    margin: 0 2px;
+}
+.card_image .hover_state ul li a 
+{
+    color:#fff;
+    background-color: #126d63;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+    transition: all 0.3s ease-in;
+}
+.card_image .hover_state ul li a:hover
+{
+    background-color: #fe630e;
+   
+}
+.card_image .hover_state ul li a i
+{
+    margin-top: 5px;
+}
+
+.card-style:hover .card_image .hover_state ul
+{
+    opacity: 1;
+    top: 50%;
+    visibility: visible;
+}
+/* End of Meet Our Experts Section*/
+/***************************************/
+/* Start of Credit Section*/
+.credit
+{
+    /* background-size: 100% 60%; */
+    background-image: url("../images/counterup-feature-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+}
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .counterup-feature-section {
+        background-size: 100% 60%;
+    }
+}
+.Counter_area
+{
+    padding-top: 120px;
+    padding-bottom: 90px;
+}
+.icon_box
+{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.icon_image img
+{
+    width: auto;
+    margin: 0 auto 20px;
+}
+.icon_content span {
+    color: #102039;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-top: 5px;
+    display: block;
+}
+
+/* End of Credit section*/
+/***************************************/
+/* Footer section*/
+.footer_image
+{
+    background-image: url("../images/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+      
+}
+.card_footer
+{
+    padding-top: 115px;
+}
+.footer_title h5
+{
+    color: #fff !important;
+    margin-bottom: 20px;
+}
+.widget p
+{
+    color: rgba(234, 234, 234, 0.7);;
+}
+.widget ul 
+{
+    padding-left: 0px ;
+}
+.widget ul li
+{
+    margin-top: 10px;
+}
+.widget ul li 
+{
+    color: rgba(234, 234, 234, 0.7) ;
+}
+.widget ul li a
+{
+    color: rgba(234, 234, 234, 0.7);
+}
+
+.widget ul li:hover a
+{
+    color: #fe630e !important;
+}
+.schedule
+{
+    margin-bottom: 40px;
+}
+.schedule ul li 
+{
+    display: flex;
+    justify-content: space-between;
+}
+.dividor
+{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+    background-color: rgba(234, 234, 234, 0.7);
+}
+.copy_right
+{
+    border-top: 1px solid rgba(234, 234, 234, 0.7);
+    color: rgba(234, 234, 234, 0.7);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.copy_right span a 
+{
+    color: #fe630e;
+}
+.footer_copyright_links
+{
+    text-align: right;
+}
+.footer_copyright_links ul
+{
+    margin-bottom: 0px;
+}
+.footer_copyright_links ul li
+{
+    display: inline;
+    margin-left: 15px;
+}
+.footer_copyright_links ul li a
+{
+    color: rgba(234, 234, 234, 0.7);
+}
+.footer_copyright_links ul li:hover a
+{
+    color: #fe630e;
+}
+/*End of Footer section*/
+.BackToTop 
+{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 50px;
+    right: 50px;
+    background-color: #126d63;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+    transition: all 0.3s ease-in;
+    visibility: hidden;
+}
+@media (max-width : 992px)
+{
+    .BackToTop
+    {
+        display: none !important;
+    }
+    
+}
+.BackToTop:hover
+{
+    background-color: #fe630e;
+}
+.Visiable{
+    visibility: visible;
+}
+
