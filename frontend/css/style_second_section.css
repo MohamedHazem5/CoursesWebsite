@@ -203,6 +203,16 @@ p {
     margin-top: 5px;
     display: block;
 }
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.lessons {
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
 
 /* End of Credit section*/
 /***************************************/
