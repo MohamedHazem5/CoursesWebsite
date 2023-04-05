@@ -277,7 +277,7 @@ nav{
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 0;
-    font-size: 30px;
+    font-size: 42px;
     padding-bottom:25px ;
 }
 .about .about-content ul{
@@ -292,7 +292,31 @@ nav{
     align-items: center;
     color: #126d63;
 }
-.about .gallery img{
-    width:100%;
+.about .gallary{
+    margin-top: 80px;
+}
+.about .gallary img{
+    width: 85%;
+    height: auto;
+    display: block;
+    margin-bottom:20px;
+    margin-inline:auto
+}
+.about .gallary .image-1,
+.about .gallary .image-3{
+    position: relative;
+    max-width:250px
+}
+.about .gallary .image-2,
+.about .gallary .image-4{
+    position: relative;
+    top: 80px;
+    max-width:250px
+}
+@media (max-width:767px){
+    .about .gallary .image-2,
+    .about .gallary .image-4{
+        top:0;
+    }
 }
 /* End About  */
