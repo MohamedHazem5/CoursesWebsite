@@ -265,3 +265,31 @@ nav{
     margin: 100px 0;
 }
 /* End Flow  */
+
+/* Start About  */
+.about .about-content h3{
+    color: #fe630e;
+    font-size: 20px;
+    margin-top: 10px;
+    padding-block: 20px;
+}
+.about .about-content h4{
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0;
+    font-size: 30px;
+    padding-bottom:25px ;
+}
+.about .about-content ul{
+    padding:0;
+    font-size:18px
+}
+.about .about-content ul li {
+    margin-bottom: 10px;
+}
+.about .about-content ul li svg{
+    padding-right:8px;
+    align-items: center;
+    color: #126d63;
+}
+/* End About  */
