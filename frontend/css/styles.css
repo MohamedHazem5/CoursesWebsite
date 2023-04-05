@@ -292,4 +292,7 @@ nav{
     align-items: center;
     color: #126d63;
 }
+.about .gallery img{
+    width:100%;
+}
 /* End About  */
