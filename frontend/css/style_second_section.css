@@ -167,6 +167,8 @@ p {
 /* End of Meet Our Experts Section*/
 /***************************************/
 /* Start of Credit Section*/
+
+
 .credit
 {
     /* background-size: 100% 60%; */
@@ -175,11 +177,14 @@ p {
     background-position: top;
     background-size: 100%;
 }
-@media (min-width: 992px) and (max-width: 1199.98px){
-    .counterup-feature-section {
+
+@media (min-width: 1440px )and( max-width: 1599.98px){
+    .credit {
         background-size: 100% 60%;
     }
+    
 }
+
 .Counter_area
 {
     padding-top: 120px;
@@ -213,7 +218,59 @@ img{
     margin-bottom: 30px;
     border-radius: 5px;
 }
-
+.IntroLessons::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(transparent, black);
+}
+.IntroLessons:hover .lessons_content .play_button a
+{
+    color: #fe630e;
+}
+.IntroLessons:hover .lessons_content h3 a
+{
+    text-decoration: none;
+    color: #fe630e;
+}
+.IntroLessons
+{
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.lessons_content
+{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.play_button a 
+{
+    color: #126d63;
+    background-color: #ffffff;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+.lessons_content h3 a
+{
+        color: #ffffff;
+        -webkit-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+}
 /* End of Credit section*/
 /***************************************/
 /* Footer section*/

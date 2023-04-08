@@ -117,22 +117,47 @@ let icon_4 = setInterval(()=>
  * 
  */
 
-link = "https://www.youtube.com/embed/ezbJwaLmOeM?autoplay=1";
-var iframe = document.createElement("div");
-iframe.innerHTML = 
-`<div class="mfp-bg mfp-ready"></div>
-    <div class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ready" tabindex="-1" style="overflow: hidden auto;">
-        <div class="mfp-container mfp-s-ready mfp-iframe-holder">
-            <div class="mfp-content">
-                <div class="mfp-iframe-scaler">
-                    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
-                    <iframe class="mfp-iframe" src="${link}" frameborder="0" allowfullscreen=""></iframe>
-                </div>
-            </div>
-        <div class="mfp-preloader">Loading...</div>
-    </div>
-</div>`;
+var link = {};
+for (var i = 0; i < 3; i++)
+link[i] = document.getElementsByClassName("play_button")[i].firstElementChild.getAttribute("href").valueOf();
+
+var iframe = {};
+for (var i = 0; i < 3; i++)
+iframe[i] = document.createElement("div");
+for (var i = 0; i < 3; i++)
+iframe[i].innerHTML = `<div class="mfp-bg mfp-ready"></div>
+                        <div class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ready" tabindex="-1" style="overflow: hidden auto;">
+                            <div class="mfp-container mfp-s-ready mfp-iframe-holder">
+                                <div class="mfp-content">
+                                    <div class="mfp-iframe-scaler">
+                                        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+                                        <iframe class="mfp-iframe" src=${link[i]} frameborder="0" allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
+                            <div class="mfp-preloader">Loading...</div>
+                        </div>
+                    </div>`;
 // /*on click*/
-// document.body.prepend(iframe);
+var buttons = {};
+for (var i = 0; i < 3; i++)
+buttons[i] = document.getElementsByClassName("play_button")[i].firstElementChild;
+
+var close ;
+for (var i = 0; i < 3; i++)
+{
+    buttons[i].addEventListener("click", ()=>{
+        document.body.prepend(iframe[i]);
+        close =  document.getElementsByClassName("mfp-close")[0];
+        close.addEventListener("click",()=>{
+            document.body.removeChild(document.body.firstChild);
+        })
+    })
+}
+// i sweer i dont know the reason but you should not remove this
+for (var i = 0; i < 0; i++)
+{
+    blabla.addEventListener("");
+}
+
 // /*on click*/
 // document.body.removeChild(iframe);
