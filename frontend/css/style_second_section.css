@@ -171,14 +171,13 @@ p {
 
 .credit
 {
-    /* background-size: 100% 60%; */
     background-image: url("../images/counterup-feature-bg.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;
 }
 
-@media (min-width: 1440px )and( max-width: 1599.98px){
+@media (min-width: 1440px ) and ( max-width: 1599.98px){
     .credit {
         background-size: 100% 60%;
     }
@@ -234,7 +233,6 @@ img{
 }
 .IntroLessons:hover .lessons_content h3 a
 {
-    text-decoration: none;
     color: #fe630e;
 }
 .IntroLessons
@@ -272,6 +270,117 @@ img{
         transition: all 0.3s ease-in;
 }
 /* End of Credit section*/
+/***************************************/
+/* feedback */
+.single_feedback
+{
+    margin: 20px 15px;
+    background-color: #ffffff;
+    position: relative;
+    padding: 40px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+.quote-icon
+{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.4);
+}
+.reviewer_image img
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%
+}
+.reviewer_text h4
+{
+    color: #126d63;
+    transition: all 0.3s ease-in;
+}
+.reviewer_text span
+{
+    text-transform: capitalize;
+    display: block;
+    margin-top: 5px;
+}
+/* end of feedback */
+/***************************************/
+/* blog */
+.blog_section
+{
+    background-color: #fffcf3;
+    padding-top: 115px;
+    padding-bottom: 100px;
+}
+.blog_section .blog_slider .slick-slide 
+{
+    margin: 20px 15px;
+}
+.blog_image img
+{
+    border-radius: 5px 5px 0 0;
+}
+.blog_content
+{
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 20px rgb(0 0 0 / 10%);
+    border-radius: 0 0 5px 5px;
+}
+.blog_title h4 a
+{
+    color: #102039;
+    transition: all 0.3s ease-in;
+}
+.blog_title h4 a:hover
+{
+    color: #fe630e;
+}
+.content_wrap
+{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px;
+}
+.content_wrap a 
+{
+    color: #126d63;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in;
+    
+}
+a
+{
+    text-decoration: none !important;
+}
+.content_wrap a + a
+{
+    margin-left: 30px;
+}
+.button_orange
+{
+    
+    color: #126d63;
+    background-color: transparent;
+    border: 1px solid #126d63;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    display: inline-block;
+    padding: 14px 40px;
+    transition: all 0.3s ease-in;
+    border-radius: 5px;
+}
+.button_orange:hover
+{
+    color: #ffffff;
+    background-color: #fe630e;
+    border: 1px solid transparent;
+}
+/* end of blog */
 /***************************************/
 /* Footer section*/
 .footer_image

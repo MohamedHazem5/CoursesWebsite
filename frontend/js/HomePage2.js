@@ -116,11 +116,9 @@ let icon_4 = setInterval(()=>
  * iframe - budy append child 
  * 
  */
-
 var link = {};
 for (var i = 0; i < 3; i++)
 link[i] = document.getElementsByClassName("play_button")[i].firstElementChild.getAttribute("href").valueOf();
-
 var iframe = {};
 for (var i = 0; i < 3; i++)
 iframe[i] = document.createElement("div");
@@ -137,11 +135,9 @@ iframe[i].innerHTML = `<div class="mfp-bg mfp-ready"></div>
                             <div class="mfp-preloader">Loading...</div>
                         </div>
                     </div>`;
-// /*on click*/
 var buttons = {};
 for (var i = 0; i < 3; i++)
 buttons[i] = document.getElementsByClassName("play_button")[i].firstElementChild;
-
 var close ;
 for (var i = 0; i < 3; i++)
 {
@@ -153,11 +149,122 @@ for (var i = 0; i < 3; i++)
         })
     })
 }
-// i sweer i dont know the reason but you should not remove this
-for (var i = 0; i < 0; i++)
-{
-    blabla.addEventListener("");
-}
 
-// /*on click*/
-// document.body.removeChild(iframe);
+/*/*//*/*//***//*/*//* */ /*//** */
+/**
+ * 
+ * 
+ */
+var track = document.getElementsByClassName("slick-track")[0];
+var i = 0;
+setInterval(()=>{
+    if (i == 0)
+    {
+        let j = 0;
+        let trackint = setInterval(()=>{
+            transform: track.style.transform =  `translate3d(${j}px, 0px, 0px)`;
+            j -= 10 ;
+            if (j < -555)
+                clearInterval(trackint);
+        },18)
+        i = 1;
+    }
+    if ( i == 1)
+    { 
+        let j = -555;
+        let trackint = setInterval(()=>{
+            transform: track.style.transform =  `translate3d(${j}px, 0px, 0px)`;
+            j -= 10 ;
+            if (j < -1110)
+                clearInterval(trackint);
+        },18)
+        i = 2;
+    }
+    else if ( i == 2)
+    { 
+        let j = -1110;
+        let trackint = setInterval(()=>{
+            transform: track.style.transform =  `translate3d(${j}px, 0px, 0px)`;
+            j -= 10 ;
+            if (j < -1665)
+                clearInterval(trackint);
+        },18)
+        i = 3;
+    }
+    else if ( i == 3)
+    { 
+        let j = -1665;
+        let trackint = setInterval(()=>{
+            transform: track.style.transform =  `translate3d(${j}px, 0px, 0px)`;
+            j -= 10 ;
+            if (j < -2220)
+                clearInterval(trackint);
+        },18)
+        i = 0;
+    }  
+},4500);
+/*/*//*/*//***//*/*//* */ /*//** */
+/**
+ * 
+ * 
+ */
+var track_blog = document.getElementsByClassName("slick-track")[1];
+var k = 0;
+setInterval(()=>{
+    if (k == 0)
+    {
+        let j = 0;
+        let trackint = setInterval(()=>{
+            transform: track_blog.style.transform =  `translate3d(${j}px, 0px, 0px)`;
+            j -= 10 ;
+            if (j < -370)
+                clearInterval(trackint);
+        },10)
+        k = 1;
+    }
+    if (k == 1)
+    { 
+        let j = -370;
+        let trackint = setInterval(()=>{
+            transform: track_blog.style.transform =  `translate3d(${j}px, 0px, 0px)`;
+            j -= 10 ;
+            if (j < -(370 * 2))
+                clearInterval(trackint);
+        },10)
+        k = 2;
+    }
+    else if (k == 2)
+    { 
+        let j = -(370 * 2);
+        let trackint = setInterval(()=>{
+            transform: track_blog.style.transform =  `translate3d(${j}px, 0px, 0px)`;
+            j -= 10 ;
+            if (j < -(370 * 3))
+                clearInterval(trackint);
+        },10)
+        k = 3;
+    }
+    else if (k == 3)
+    { 
+        let j = -(370 * 3);
+        let trackint = setInterval(()=>{
+            transform: track_blog.style.transform =  `translate3d(${j}px, 0px, 0px)`;
+            j -= 10 ;
+            if (j < -(370 * 4))
+                clearInterval(trackint);
+        },10)
+        k = 4;
+    }  
+    else if (k == 4)
+    { 
+        let j = -(370 * 4);
+        let trackint = setInterval(()=>{
+            transform: track_blog.style.transform =  `translate3d(${j}px, 0px, 0px)`;
+            j -= 10 ;
+            if (j < -(370 * 5))
+                clearInterval(trackint);
+        },10)
+        k = 0;
+    }  
+   
+},4500);
