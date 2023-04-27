@@ -1,0 +1,221 @@
+.breadcrumb_section
+{
+    padding: 100px 0;
+    background-image: url(../images/blog_details/breadcrumb.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.breadcrumb_section ul li a {
+    color: #606060;
+    transition: all 0.3s ease-in;
+}
+.breadcrumb_section ul li 
+{
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin: 0 2px;
+    color: #606060;
+}
+.blog_meta i {
+    margin-right: 5px;
+}
+.blog_meta a {
+    color: #606060;
+    transition: all 0.3s ease-in;
+}
+.blog_meta a:hover {
+    color: #fe630e;
+}
+.blog_meta li
+{
+    display: inline-block;
+}
+.blog_meta 
+{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.blog_meta li + li {
+    margin-left: 20px;
+}
+p
+{
+    color: #606060;
+    margin-bottom: 10px;
+}
+.blog_quote {
+    padding: 40px;
+    background-color: #126d63;
+    border-radius: 5px;
+}
+.blog_quote span {
+    color: #ffffff;
+    font-size: 20px;
+    font-style: italic;
+}
+span.divider {
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #126d63;
+    margin-top: 10px;
+}
+.list_image {
+    float: left;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.list_image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+.replay_button i {
+        margin-right: 5px;
+    
+}
+.replay_button:hover {
+    color: #fe630e;
+}
+.replay_button {
+    color: #102039;
+    font-size: 14px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.blog_comments_form form textarea,.blog_comments_form form input {
+    padding: 15px 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid transparent;
+    background-color: rgba(234, 234, 234, 0.7);
+}
+.blog_comments_form form textarea {
+    height: 150px;
+}
+.template_btn {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: #fe630e;
+    transition: all 0.3s ease-in;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+.template_btn:hover {
+    color: #ffffff;
+    background-color: #126d63;
+}
+.widget_style {
+    padding: 40px 30px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+}
+.widget_style + .widget_style {
+    margin-top: 30px;
+}
+.widget_search form {
+    width: 100%;
+    position: relative;
+}
+.widget_search form input {
+    width: 100%;
+    height: 50px;
+    padding: 0 70px 0 20px;
+    background-color: rgba(234, 234, 234, 0.7);
+    border: 1px solid transparent;
+}
+.widget_search form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid transparent;
+    background-color: #126d63;
+    color: #ffffff;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+.widget_search form button:hover {
+    color: #ffffff;
+    background-color: #fe630e;
+}
+.widget_title
+{
+    margin-bottom: 30px;
+}
+.single_recent_post {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.post_image img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.post_content span {
+    text-transform: capitalize;
+    display: block;
+}
+.post_content a {
+    color: #102039;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.post_content a:hover {
+    color: #fe630e;
+}
+.single_recent_post + .single_recent_post {
+    margin-top: 20px;
+    border-top: 1px solid #eaeaea;
+    padding-top: 20px;
+}
+.widget_categories li a {
+    color: #102039;
+    text-transform: capitalize;
+    font-family: var(--heading-font);
+    transition: all 0.3s ease-in;
+}
+.widget_categories li + li {
+    margin-top: 15px;
+}
+.widget_categories li a:hover {
+    color: #fe630e;
+}
+.widget_tag li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.widget_tag li a {
+    display: inline-block;
+    color: #606060;
+    background-color: rgba(234, 234, 234, 0.7);
+    text-transform: capitalize;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in;
+}
+.widget_tag li a:hover {
+    color: #ffffff;
+    background-color: #fe630e;
+}
