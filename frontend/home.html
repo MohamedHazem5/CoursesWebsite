@@ -7,10 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoursesWebsite</title>
 
+    <!-- Wow Animation -->
+    <link rel="stylesheet" href="css/animate.css">
+
     <!-- BootStrap links -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- FontAwesome  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="css/fontawesome.css" rel="stylesheet">
+    <link href="css/brands.css" rel="stylesheet">
+    <link href="css/solid.css" rel="stylesheet">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,22 +42,22 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav ms-auto">
                     <li class="navbar-item">
-                        <a href="#" class="nav-link">Homepage</a>
+                        <a href="home.html" class="nav-link">Homepage</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link">About Us</a>
+                        <a href="about.html" class="nav-link">About Us</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link">Course</a>
+                        <a href="course.html" class="nav-link">Course</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link">Blog</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link">Pages</a>
+                        <a href="pages.html" class="nav-link">Pages</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
                     </li>
                 </ul>
                 <a href="#" class="btn">Get Started</a>
@@ -62,7 +70,7 @@
     <div class="landing border-bottom">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-md-6 ">
+                <div class="col-12 col-md-6 wow fadeInLeft" data-wow-duration="2s">
                     <div class="landing-content">
                         <h1 class="my-2">Online Learning</h1>
                         <h2 class="my-3">World’s Leading Machine Learning Courses</h2>
@@ -79,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 d-flex">
+                <div class="col-12 col-md-6 d-flex wow fadeInRight" data-wow-duration="2s" >
                     <div class="landing-img">
                         <img src="./images/hero-image.png" alt="">
                     </div>
@@ -91,7 +99,7 @@
     <!-- End Landing  -->
     
     <!-- Start Popular Categories -->
-    <div class="popular ">
+    <div class="popular mb-5">
         <div class="container">
             <div class="content text-center">
                 <h2 class="fs-1 fw-bold mb-2">Browse Popular Categories</h2>
@@ -99,29 +107,29 @@
             </div>
             <div class="Categories">
                 <div class="row text-center">
-                    <div class="box col-12 col-lg-3">
+                    <div class="box col-12 col-lg-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                         <img src="./images/category-1.png" alt="" class="mt-2">
                         <div class="box-content">
                             <h3 class="mt-3 fw-bold">Content Writing</h3>
                             <p class="mt-3 fs-5">35 Courses</p>
                         </div>
                     </div>
-                    <div class="box col-12 col-lg-3">
-                        <img src="./images/category-2.png" alt="" class="mt-2">
+                    <div class="box col-12 col-lg-3 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
+                        <img src="./images/category-2.png" alt="" class="mt-2 " >
                         <div class="box-content">
                             <h3 class="mt-3 fw-bold">Programing</h3>
                             <p class="mt-3 fs-5">27 Courses</p>
                         </div>
                     </div>
-                    <div class="box col-12 col-lg-3">
-                        <img src="./images/category-3.png" alt="" class="mt-2">
+                    <div class="box col-12 col-lg-3 wow fadeInUp" data-wow-duration="3s" data-wow-delay=".6s">
+                        <img src="./images/category-3.png" alt="" class="mt-2 " >
                         <div class="box-content">
                             <h3 class="mt-3 fw-bold">Art & Desgin</h3>
                             <p class="mt-3 fs-5">74 Courses</p>
                         </div>
                     </div>
-                    <div class="box col-12 col-lg-3">
-                        <img src="./images/category-4.png" alt="" class="mt-2">
+                    <div class="box col-12 col-lg-3 wow fadeInUp" data-wow-duration="4s" data-wow-delay=".8s">
+                        <img src="./images/category-4.png" alt="" class="mt-2 " >
                         <div class="box-content">
                             <h3 class="mt-3 fw-bold">Accounting</h3>
                             <p class="mt-3 fs-5">38 Courses</p>
@@ -134,11 +142,11 @@
     <!-- End Popular Categories -->
 
     <!-- Start flow -->
-    <div class="flow my-5">
+    <div class="flow mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 ">
-                    <div class="flow-img">
+                    <div class="flow-img wow fadeInLeft" data-wow-duration="2s" data-wow-offset="20">
                         <img src="./images/teaching-image.png" alt="">
                     </div>
                 </div>
@@ -154,8 +162,280 @@
     </div>
     <!-- End flow -->
 
+    <!-- Start About  -->
+    <div class="about my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12 wow slideInLeft" data-wow-duration="2s">
+                    <div class="about-content">
+                        <h3>Learn Anything</h3>
+                        <h4>Benefit From Our Online Learning About</h4>
+                        <p class="text-black-50 fs-6">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ullamco</p>
+                        <ul>
+                            <li class="text-black-50">
+                                <i class="fa-regular fa-lightbulb"></i>
+                                Creative Study Pattern
+                            </li>
+                            <li class="text-black-50">
+                                <i class="fa-regular fa-paper-plane"></i>
+                                Quick Crash Courses
+                            </li>
+                            <li class="text-black-50">
+                                <i class="fa-solid fa-check"></i>
+                                Provided with Experimental Examples
+                            </li>
+                            <li  class="text-black-50">
+                                <i class="fa-solid fa-award"></i>
+                                Certification Awarded
+                            </li>
+                        </ul>
+                        <a href="#" class="btn mt-2">Discover Courses</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 wow slideInRight" data-wow-duration="2s">
+                    <div class="gallary">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="images/about-1.png" class= "image-1" alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="images/about-2.png" class= "image-2" alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="images/about-3.png" class= "image-3"  alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="images/about-4.png" class= "image-4" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About  -->
+
+    <!-- Start Courses -->
+    <div class="courses my-5 py-5">
+        <div class="container">
+            <div class="section-title text-center py-5">
+                <h2>Professional Online Courses</h2>
+                <p class="text-black-50">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="card col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".1s" style="width: 20rem;">
+                    <div class="card-image">
+                        <img src="./images/course-1.png" alt="...">
+                    </div>
+                    <a class="course-title">Marketing</a>
+                    <div class="card-body pt-0">
+                        <h5 class="course-instructor orange">James Stewart</h5>
+                        <p class="card-text fs-4 fw-bold">Language Learning (15 Day)
+                            Crash Course Zen</p>
+                        <div class="course-review d-flex justify-content-between">
+                            <div class="stars ">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                            <div class="rating text-black-50">
+                                <span><b>4.5</b>(45 Review)</span>
+                            </div>
+                        </div>
+                        <hr class="text-black-50">
+                        <div class="cost d-flex justify-content-between">
+                            <div class="left">
+                                <i class="fa-solid fa-clock"></i>
+                                12 Hour
+                            </div>
+                            <div class="right">
+                                <span class="price">$25.00/hr</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".3s" style="width: 20rem;">
+                    <div class="card-image">
+                        <img src="./images/course-2.png" alt="...">
+                    </div>
+                    <a class="course-title">Marketing</a>
+                    <div class="card-body pt-0">
+                        <h5 class="course-instructor orange">James Stewart</h5>
+                        <p class="card-text fs-4 fw-bold">Language Learning (15 Day)
+                            Crash Course Zen</p>
+                        <div class="course-review d-flex justify-content-between">
+                            <div class="stars ">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                            <div class="rating text-black-50">
+                                <span><b>4.5</b>(45 Review)</span>
+                            </div>
+                        </div>
+                        <hr class="text-black-50">
+                        <div class="cost d-flex justify-content-between">
+                            <div class="left">
+                                <i class="fa-solid fa-clock"></i>
+                                12 Hour
+                            </div>
+                            <div class="right">
+                                <span class="price">$25.00/hr</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".5s" style="width: 20rem;">
+                    <div class="card-image">
+                        <img src="./images/course-3.png" alt="...">
+                    </div>
+                    <a class="course-title">Marketing</a>
+                    <div class="card-body pt-0">
+                        <h5 class="course-instructor orange">James Stewart</h5>
+                        <p class="card-text fs-4 fw-bold">Language Learning (15 Day)
+                            Crash Course Zen</p>
+                        <div class="course-review d-flex justify-content-between">
+                            <div class="stars ">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                            <div class="rating text-black-50">
+                                <span><b>4.5</b>(45 Review)</span>
+                            </div>
+                        </div>
+                        <hr class="text-black-50">
+                        <div class="cost d-flex justify-content-between">
+                            <div class="left">
+                                <i class="fa-solid fa-clock"></i>
+                                12 Hour
+                            </div>
+                            <div class="right">
+                                <span class="price">$25.00/hr</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".7s" style="width: 20rem;">
+                    <div class="card-image">
+                        <img src="./images/about-1.png" alt="...">
+                    </div>
+                    <a class="course-title">Marketing</a>
+                    <div class="card-body pt-0">
+                        <h5 class="course-instructor orange">James Stewart</h5>
+                        <p class="card-text fs-4 fw-bold">Language Learning (15 Day)
+                            Crash Course Zen</p>
+                        <div class="course-review d-flex justify-content-between">
+                            <div class="stars ">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                            <div class="rating text-black-50">
+                                <span><b>4.5</b>(45 Review)</span>
+                            </div>
+                        </div>
+                        <hr class="text-black-50">
+                        <div class="cost d-flex justify-content-between">
+                            <div class="left">
+                                <i class="fa-solid fa-clock"></i>
+                                12 Hour
+                            </div>
+                            <div class="right">
+                                <span class="price">$25.00/hr</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".9s" style="width: 20rem;">
+                    <div class="card-image">
+                        <img src="./images/about-2.png" alt="...">
+                    </div>
+                    <a class="course-title">Marketing</a>
+                    <div class="card-body pt-0">
+                        <h5 class="course-instructor orange">James Stewart</h5>
+                        <p class="card-text fs-4 fw-bold">Language Learning (15 Day)
+                            Crash Course Zen</p>
+                        <div class="course-review d-flex justify-content-between">
+                            <div class="stars ">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                            <div class="rating text-black-50">
+                                <span><b>4.5</b>(45 Review)</span>
+                            </div>
+                        </div>
+                        <hr class="text-black-50">
+                        <div class="cost d-flex justify-content-between">
+                            <div class="left">
+                                <i class="fa-solid fa-clock"></i>
+                                12 Hour
+                            </div>
+                            <div class="right">
+                                <span class="price">$25.00/hr</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 wow fadeIn" data-wow-delay="1.1s" style="width: 20rem;">
+                    <div class="card-image">
+                        <img src="./images/about-3.png" alt="...">
+                    </div>
+                    <a class="course-title">Marketing</a>
+                    <div class="card-body pt-0">
+                        <h5 class="course-instructor orange">James Stewart</h5>
+                        <p class="card-text fs-4 fw-bold">Language Learning (15 Day)
+                            Crash Course Zen</p>
+                        <div class="course-review d-flex justify-content-between">
+                            <div class="stars ">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                            <div class="rating text-black-50">
+                                <span><b>4.5</b>(45 Review)</span>
+                            </div>
+                        </div>
+                        <hr class="text-black-50">
+                        <div class="cost d-flex justify-content-between">
+                            <div class="left">
+                                <i class="fa-solid fa-clock"></i>
+                                12 Hour
+                            </div>
+                            <div class="right">
+                                <span class="price">$25.00/hr</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- End Courses -->
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
