@@ -343,7 +343,7 @@ li:hover.has_submenu::after{
 .flow .content{
     position: absolute;
     display: block;
-    color: #fff;
+    color: #fff !important;
     margin: 100px 0;
 }
 /* End Flow  */
