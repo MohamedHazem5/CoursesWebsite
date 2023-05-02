@@ -340,11 +340,14 @@ li:hover.has_submenu::after{
         display: none;
     }
 }
-.flow .content{
+.flow .content {
     position: absolute;
     display: block;
-    color: #fff !important;
+    color: #fff;
     margin: 100px 0;
+}
+.flow .content h2 {
+    color: #fff;
 }
 /* End Flow  */
 
