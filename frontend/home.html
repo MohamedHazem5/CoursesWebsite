@@ -13,6 +13,7 @@
     <!-- BootStrap links -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style_second_section.css">
     
     <!-- FontAwesome  -->
     <link rel="stylesheet" href="css/all.min.css">
@@ -53,8 +54,14 @@
                     <li class="navbar-item">
                         <a href="blog.html" class="nav-link">Blog</a>
                     </li>
-                    <li class="navbar-item">
-                        <a href="pages.html" class="nav-link">Pages</a>
+                    <li class="has_submenu navbar-item">
+                        <a href="#" class="nav-link">pages</a>
+                        <ul class="submenu">
+                            <li><a href="blog-details.html">blog details</a></li>
+                            <li><a href="course-details.html">course details</a></li>
+                            <li><a href="faq.html">faq page</a></li>
+                            <li><a href="404.html">404 page</a></li>
+                        </ul>
                     </li>
                     <li class="navbar-item">
                         <a href="contact.html" class="nav-link">Contact</a>
@@ -429,13 +436,36 @@
         </div>
     </div>
     <!-- End Courses -->
+    <!-- back button -->
+    <div class="BackToTop" style="display: block;">
+        <span>
+            <i class="fa fa-angle-up">
+            </i>
+        </span>
+    </div>
+    <!-- end of back button -->
+   
 
+    <style>
+        iframe {
+          width: 1px;
+          min-width: 100%;
+      }
+    </style>
+    <script src="node_modules/iframe-resizer/js/iframeResizer.min.js"></script>
+    <iframe id="myIframe" src="home_bottom.html"></iframe>
+    <script>
+      iFrameResize({ log: true }, '#myIframe')
+    </script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/HomePage.js"></script>
     <script>
         new WOW().init();
     </script>
+    
 </body>
 
 </html>
+
