@@ -514,4 +514,18 @@ li:hover.has_submenu::after{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
 /* End Courses  */
+/* Start Courses Page */
+.course-landing{
+    display: flex;
+    padding: 100px 0;
+    background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+.course-landing .content{
+    margin:auto 
+}
+
+/* End Courses Page */
