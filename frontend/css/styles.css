@@ -3,7 +3,7 @@
     padding: 0;
 }
 .orange{
-    color:#fe630e
+    color:#a80038
 }
 .full-screen-preview {
     height: 100%;
@@ -102,7 +102,7 @@ nav{
 }
 .navbar-toggler{
     color:#fff;
-    background-color: #fe630e;
+    background-color: #a80038;
 }
 .btn {
     color: #ffffff;
@@ -111,7 +111,7 @@ nav{
     text-transform: capitalize;
     display: inline-block;
     padding: 14px 40px;
-    background-color: #fe630e;
+    background-color: #a80038;
     -webkit-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
@@ -303,7 +303,7 @@ li:hover.has_submenu::after{
     font-weight: 500;
 }
 .popular .Categories .box:hover{
-    background-color: #fe630e;
+    background-color: #a80038;
     border:#fff
 } 
 .popular .Categories .box:hover img{
@@ -353,7 +353,7 @@ li:hover.has_submenu::after{
 
 /* Start About  */
 .about .about-content h3{
-    color: #fe630e;
+    color: #a80038;
     font-size: 20px;
     margin-top: 10px;
     padding-block: 20px;
@@ -427,11 +427,11 @@ li:hover.has_submenu::after{
 }
 .courses .card:hover .course-title,
 .courses .card:hover .course-title:before{
-    background-color:#fe630e;
+    background-color:#a80038;
     color:#fff
 }
 .courses .card:hover .card-text{
-    color:#fe630e
+    color:#a80038
 }
 .courses .card:hover{
     background-color: #fff;

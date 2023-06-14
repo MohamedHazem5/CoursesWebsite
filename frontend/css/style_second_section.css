@@ -150,7 +150,7 @@ p {
 }
 .card_image .hover_state ul li a:hover
 {
-    background-color: #fe630e;
+    background-color: #a80038;
    
 }
 .card_image .hover_state ul li a i
@@ -229,11 +229,11 @@ img{
 }
 .IntroLessons:hover .lessons_content .play_button a
 {
-    color: #fe630e;
+    color: #a80038;
 }
 .IntroLessons:hover .lessons_content h3 a
 {
-    color: #fe630e;
+    color: #a80038;
 }
 .IntroLessons
 {
@@ -336,7 +336,7 @@ img{
 }
 .blog_title h4 a:hover
 {
-    color: #fe630e;
+    color: #a80038;
 }
 .content_wrap
 {
@@ -377,7 +377,7 @@ a
 .button_orange:hover
 {
     color: #ffffff;
-    background-color: #fe630e;
+    background-color: #a80038;
     border: 1px solid transparent;
 }
 /* end of blog */
@@ -424,7 +424,7 @@ a
 
 .widget ul li:hover a
 {
-    color: #fe630e !important;
+    color: #a80038 !important;
 }
 .schedule
 {
@@ -454,7 +454,7 @@ a
 }
 .copy_right span a 
 {
-    color: #fe630e;
+    color: #a80038;
 }
 .footer_copyright_links
 {
@@ -475,7 +475,7 @@ a
 }
 .footer_copyright_links ul li:hover a
 {
-    color: #fe630e;
+    color: #a80038;
 }
 /*End of Footer section*/
 .BackToTop 
@@ -508,7 +508,7 @@ a
 }
 .BackToTop:hover
 {
-    background-color: #fe630e;
+    background-color: #a80038;
 }
 .Visiable{
     visibility: visible;

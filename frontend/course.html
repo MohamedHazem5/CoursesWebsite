@@ -295,8 +295,18 @@
         </div>
     </div>
     <!-- End Courses -->
-    
+    <iframe id="myIframe_3" src="course_bottom.html"></iframe>
 
+    <style>
+        iframe {
+          width: 1px;
+          min-width: 100%;
+      }
+    </style>
+    <script src="node_modules/iframe-resizer/js/iframeResizer.min.js"></script>
+    <script>
+      iFrameResize({ log: true }, '#myIframe_3')
+    </script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/wow.min.js"></script>
