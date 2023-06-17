@@ -1,0 +1,38 @@
+.card{
+    display: block;
+    font-family: "Roboto", sans-serif;
+    background-color: transparent;
+    color: #102039;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    margin: 24px 0px;
+    cursor: pointer;
+    position: relative;
+}
+.card_header{
+    font-size: 20px;
+    line-height: 1.15;
+    font-weight: 500;
+    margin: 20px 30px;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: #102039;
+    background: #ffffff;
+
+}
+.card_body{
+    background-color: #ffffff;
+    padding: 5px 30px 20px;
+    color: #414040b1;
+
+}
+p .fa-circle-plus{
+    float: right;
+    color: #A80139;
+}
+
+p .fa-circle-minus{
+    float: right;
+    color: #606060;
+}
