@@ -23,7 +23,14 @@ ul{
 a{
     text-decoration: none;
 }
-
+input{
+    padding:10px 20px;
+    display: block;
+    margin-bottom: 10px;
+    width:100%;
+    outline: none;
+    border:1px solid #ccc
+}
 /* Start Navbar  */
 nav{
     background-color: #fff;
@@ -446,3 +453,60 @@ nav{
 }
 
 /* End Courses Page */
+
+/* Start Contact Page  */
+.contact-info{
+    width:100%;
+    background-color: #fffcf3;
+}
+.contact-info .card{
+    position: relative;
+    background-color: #F6F9FE;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+@media(max-width:767px){
+    .contact-info .card{
+        display: block;
+        margin:auto
+    }
+}
+.contact-info .card .icon{
+    padding:10px;
+    background-color: #000;
+    width:60px;
+    color:#fff;
+    font-size:22px;
+    position: absolute;
+    top:-30px;
+    left:110px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.contact-info .card:hover{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)
+}
+.contact-info .card:hover .icon{
+    background-color: #A80139;
+}
+
+.contact-info .left form{
+    width:100%;
+}
+.contact-info .left form textarea{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    outline:none;
+}
+.contact-info .left form .btn{
+    margin: 10px 0;
+}
+/* End Contact Page  */
