@@ -5,6 +5,9 @@
 .orange{
     color:#A80139
 }
+.red{
+    color:#A80139
+}
 .full-screen-preview {
     height: 100%;
     padding: 0px;
@@ -22,10 +25,13 @@ ul{
     padding: 0;
     list-style: none;
 }
+li{
+    display: inline;
+}
 a{
     text-decoration: none;
 }
-input{
+input[type="text"]{
     padding:10px 20px;
     display: block;
     margin-bottom: 10px;
@@ -150,7 +156,11 @@ nav{
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease-in;
-    }
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+}
 }
 .has_submenu:hover .submenu
 {
@@ -593,3 +603,66 @@ li:hover.has_submenu::after{
     margin: 10px 0;
 }
 /* End Contact Page  */
+
+/* Start Course Details */
+.course-details-section img{
+    width:100%;
+}
+.course-details-section .course-content a {
+    font-weight: 500;
+    border:1px solid #eaeaea;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 15px;
+    width: 24%;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    color:#000;
+    background-color: #fff;
+}
+.course-details-section .course-content a.active{
+    color:#fff;
+    background-color: #A80139;
+}
+.course-details-section .course-content .checkboxs li{
+    color: #102039;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-block;
+    width: 48%;
+    margin: 8px 0;
+}
+.widget-style{
+    border:1px solid #eaeaea;
+    padding: 40px 30px;
+    border-radius: 5px;
+}
+.course-details-section .widget-area .widget-title ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-top:15px;
+}
+.course-details-section .widget-area .widget-title .btn{
+    margin:20px 0 0 0 ;
+    width:96%
+}
+.course-details-section .widget-area .course-instructor{
+    text-align: center;
+}
+.course-details-section .widget-area .course-instructor img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+}
+.course-details-section .widget-area .course-instructor .course-review{
+    justify-content: center;
+    margin-top: 15px;
+}
+.course-details-section .widget-area .course-instructor .course-review .review-left a{
+    color:gold
+}
+/* End Course Details */
