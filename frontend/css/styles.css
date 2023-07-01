@@ -50,7 +50,7 @@ nav{
     padding-bottom: 10px;
 }
 .navbar-nav .navbar-item:hover .nav-link {
-    color:#126d63 !important;
+    color:#0f758c !important;
 }
 
 .dropdown-menu{
@@ -69,7 +69,7 @@ nav{
 }
 .dropdown-menu .dropdown-item a:hover {background-color: #ddd;}
 .dropdown-menu:hover .dropdown-menu .dropdown-item {display: block;}
-.dropdown-menu:hover .dropdown a {background-color: #3e8e41;}
+.dropdown-menu:hover .dropdown a {background-color: #0f758c;}
 .navbar .logo img{
     position: absolute;
     width:120px;
@@ -93,7 +93,7 @@ nav{
     .navbar .navbar-collapse{
         margin-top:5px;
         padding-top:20px;
-        background-color: #3e8e41;
+        background-color: #0f758c;
         width:100%;
         color:#fff
     }
@@ -132,7 +132,7 @@ nav{
     margin-left:10px
 }
 .btn:hover{
-    background-color: #126d63;
+    background-color: #0f758c;
     color:#fff;
 }
 .navbar-nav li 
@@ -188,7 +188,7 @@ li.has_submenu::after
     
 }
 li:hover.has_submenu::after{
-    color:#126d63;
+    color:#0f758c;
 }
 .submenu {
     position: absolute;
@@ -216,7 +216,7 @@ li:hover.has_submenu::after{
 }
 .submenu li:hover a
 {
-    color: #126d63 !important;
+    color: #0f758c !important;
 }
 
 
@@ -238,7 +238,7 @@ li:hover.has_submenu::after{
     }
 }
 .landing .landing-content h1{
-    color: #3e8e41;
+    color: #0f758c;
     font-size: 24px;
 }
 .landing .landing-content h2{font-size: 48px;}
@@ -281,7 +281,7 @@ li:hover.has_submenu::after{
     text-align: center;
     text-transform: capitalize;
     padding: 40px 20px;
-    border: 1px solid #126d63;
+    border: 1px solid #0f758c;
     border-radius: 5px;
     margin-bottom: 50px;
     z-index: 1;
@@ -392,7 +392,7 @@ li:hover.has_submenu::after{
 .about .about-content ul li svg{
     padding-right:8px;
     align-items: center;
-    color: #126d63;
+    color: #0f758c;
 }
 .about .gallary{
     margin-top: 80px;
@@ -476,7 +476,7 @@ li:hover.has_submenu::after{
 }
 .courses .card .course-title{
     color: #ffffff;
-    background-color: #126d63;
+    background-color: #0f758c;
     padding: 10px 20px;
     width:fit-content;
     border-radius: 2px;
@@ -496,7 +496,7 @@ li:hover.has_submenu::after{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #126d63;
+    background-color: #0f758c;
     border-radius: 2px;
     -webkit-transform: skewY(5deg);
     -ms-transform: skewY(5deg);
@@ -519,7 +519,7 @@ li:hover.has_submenu::after{
 }
 .courses .card .card-body .cost .price{
     color: #ffffff;
-    background-color: #126d63;
+    background-color: #0f758c;
     padding: 10px 20px;
     width:fit-content;
     border-radius: 5px;
