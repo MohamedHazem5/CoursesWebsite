@@ -6,7 +6,7 @@
 var animate_elements = document.getElementsByClassName("animate__animated card");
 let reached_0 = setInterval(()=>
 {
-    if(animate_elements[0].getBoundingClientRect()["top"] <= (window.innerHeight - 15))
+    if(animate_elements[0].getBoundingClientRect()["top"] <= (window.innerHeight + 5))
     {
         animate_elements[0].classList.add("animate__fadeInLeft");
         animate_elements[0].classList.add("animate__delay-0.75s"); 
@@ -15,7 +15,7 @@ let reached_0 = setInterval(()=>
 }, 200)
 let reached_1 = setInterval(()=>
 {
-    if(animate_elements[1].getBoundingClientRect()["top"] <= (window.innerHeight - 15))
+    if(animate_elements[1].getBoundingClientRect()["top"] <= (window.innerHeight + 5))
     {
         animate_elements[1].classList.add("animate__fadeInUp");
         animate_elements[1].classList.add("animate__delay-0.75s");
@@ -24,7 +24,7 @@ let reached_1 = setInterval(()=>
 }, 200)
 let reached_2 = setInterval(()=>
 {
-    if(animate_elements[2].getBoundingClientRect()["top"] <= (window.innerHeight - 15))
+    if(animate_elements[2].getBoundingClientRect()["top"] <= (window.innerHeight + 5))
     {
         animate_elements[2].classList.add("animate__fadeInUp");
         animate_elements[2].classList.add("animate__delay-0.75s");
@@ -33,7 +33,7 @@ let reached_2 = setInterval(()=>
 }, 200)
 let reached_3 = setInterval(()=>
 {
-    if(animate_elements[3].getBoundingClientRect()["top"] <= (window.innerHeight - 15))
+    if(animate_elements[3].getBoundingClientRect()["top"] <= (window.innerHeight + 5))
     {
         animate_elements[3].classList.add("animate__fadeInRight");
         animate_elements[3].classList.add("animate__delay-0.75s");
