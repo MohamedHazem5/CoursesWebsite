@@ -4,7 +4,7 @@ var position_of_top = document.body.getBoundingClientRect();
 let check = setInterval(()=>
 {
     position_of_top = document.body.getBoundingClientRect();
-    if(position_of_top["y"] > -1.3*window.innerHeight)
+    if(position_of_top["y"] > -1 * window.innerHeight)
     {
         back.classList.remove("Visiable");
         
@@ -18,9 +18,6 @@ back.addEventListener("click", ()=>
     scroll(0, 0);
 })
 /*End Of BackToTop Button */
-
-        
-
 
 
 
