@@ -614,7 +614,7 @@ li:hover.has_submenu::after{
     text-transform: capitalize;
     display: inline-block;
     padding: 15px;
-    width: 24%;
+    width: fit-content;
     text-align: center;
     -webkit-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
@@ -639,6 +639,7 @@ li:hover.has_submenu::after{
     border:1px solid #eaeaea;
     padding: 40px 30px;
     border-radius: 5px;
+    margin-bottom:30px
 }
 .course-details-section .widget-area .widget-title ul li{
     display: flex;
@@ -664,5 +665,36 @@ li:hover.has_submenu::after{
 }
 .course-details-section .widget-area .course-instructor .course-review .review-left a{
     color:gold
+}
+.course-details-section .widget-area .social-icons li{
+    display: inline-block;
+    color: #102039;
+    background-color: #eaeaea;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+.course-details-section .widget-area .social-icons li:hover{
+    background-color: #A80139;
+    color:#fff
+}
+.course-details-section .widget-area .course-tags li{
+    display: inline;
+    color: #102039;
+    padding:8px 15px;
+    background-color: #eaeaea;
+    width: fit-content;
+    height: 40px;
+    line-height: 40px;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}   
+.course-details-section .widget-area .course-tags li:hover{
+    background-color: #A80139;
+    color:#fff
 }
 /* End Course Details */
