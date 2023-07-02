@@ -69,7 +69,7 @@ nav{
 }
 .dropdown-menu .dropdown-item a:hover {background-color: #ddd;}
 .dropdown-menu:hover .dropdown-menu .dropdown-item {display: block;}
-.dropdown-menu:hover .dropdown a {background-color: #3e8e41;}
+.dropdown-menu:hover .dropdown a {background-color: #0f758c;}
 .navbar .logo img{
     position: absolute;
     width:120px;
@@ -93,7 +93,7 @@ nav{
     .navbar .navbar-collapse{
         margin-top:5px;
         padding-top:20px;
-        background-color: #3e8e41;
+        background-color: #0f758c;
         width:100%;
         color:#fff
     }
@@ -238,7 +238,7 @@ li:hover.has_submenu::after{
     }
 }
 .landing .landing-content h1{
-    color: #3e8e41;
+    color: #0f758c;
     font-size: 24px;
 }
 .landing .landing-content h2{font-size: 48px;}
