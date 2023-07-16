@@ -1,4 +1,6 @@
+let check;
 const PostData = async function (url, Data) {
+    check = false;
     const response = await fetch(url, {
         method: 'POST',
         credentials: 'same-origin',
@@ -6,17 +8,19 @@ const PostData = async function (url, Data) {
         body: JSON.stringify(Data)
     });
     try {
-        const sentdata = await response.json()
-        console.log(sentdata);
-        return sentdata;
-
+        const res = await response.json()
+        return res;
     }
     catch (error) {
-        console.log("error", error);
+        check = true;
+        alert("error")
+        return check;
     }
+    
 }
 const ValidData = function () {
 
+    clearAlerts();
     const username = String($("#username").val());
     let gender = "";
     for(var i = 1; i <= 3; i++)
@@ -37,8 +41,8 @@ const ValidData = function () {
         return;
     }
     if (!/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{6,}$/.test(password)) {
-        $("#NotValid").html("*password should be min 6 characters contain <br> A Uppercase  A Lowercase A Number")
-        return
+        $("#NotValid").html("*password should be min 6 characters contain <br> A Uppercase  A Lowercase A Number");
+        return;
     }
     PostData('https://routela.somee.com/api/Account/register', {
         "username": username,
@@ -47,6 +51,18 @@ const ValidData = function () {
         "city": city,
         "country": country,
         "password": password
-    })
+    });
+    if (check != true)
+    {
+         $("#taken").html("registed");
+    }
+    else
+    $("#taken").html("username is taken");
 }
+const clearAlerts = function () {
+    $("#NotValid").html("");
+    $("#alert").html("");
+    $("#taken").html("");
+}
+
 $("#submit").click(ValidData)
