@@ -1,0 +1,75 @@
+
+.gradient-custom {
+/* fallback for old browsers */
+background: rgba(15, 117, 140, 1);
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to bottom right, rgba(168, 1, 57, 1), rgba(15, 117, 140, 1));
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to bottom right, rgba(168, 1, 57, 1), rgba(15, 117, 140, 1))
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+font-size: 1rem;
+line-height: 2.15;
+padding-left: .75em;
+padding-right: .75em;
+}
+.card-registration .select-arrow {
+top: 13px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.btn-cust{
+    color: #fff;
+
+    background: rgba(15, 117, 140, 1);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom right, rgba(15, 117, 140, 1),rgba(168, 1, 57, 1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom right, rgba(15, 117, 140, 1), rgba(168, 1, 57, 1));
+
+    border: 0px;
+}
+.btn-cust1{
+
+    background: rgba(15, 117, 140, 1);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to top right, rgba(168, 1, 57, 1), rgba(15, 117, 140, 1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to top right, rgba(168, 1, 57, 1), rgba(15, 117, 140, 1));
+
+    border: 0px;
+}
+.btn-cust:hover {
+    color: #fff;
+
+    background: rgba(15, 117, 140, 1);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom right, rgba(168, 1, 57, 1), rgba(15, 117, 140, 1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom right, rgba(168, 1, 57, 1), rgba(15, 117, 140, 1));
+
+    border: 0px;
+}
+.btn-cust1:hover {
+
+    background: rgba(15, 117, 140, 1);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom right, rgba(15, 117, 140, 1),rgba(168, 1, 57, 1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom right, rgba(15, 117, 140, 1), rgba(168, 1, 57, 1));
+
+    
+    border: 0px;
+}
+.btn-rad{
+    border-radius: 0;
+}

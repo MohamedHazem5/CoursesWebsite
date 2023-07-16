@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- our css file -->
+    <link rel="stylesheet" href="css/regist.css">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+          <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+              <div class="card shadow-2-strong card-registration" style="border-radius: 15px;overflow: hidden;">
+                <div class="row">
+                  <button class="btn btn-rad btn-cust col-6" style="font-size:x-large;"><a href="#">login</a></button>
+                  <button class="btn btn-rad btn-cust1 col-6" style="font-size:x-large;"><a href="./home.html">home</a></button>
+                </div>
+                <div class="card-body p-4 p-md-5">
+                  <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+                  
+                  <form action="./home.html" method="post">
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+      
+                        <div class="form-outline">
+                          <input type="text" id="username" class="form-control form-control-lg" name="username" required/>
+                          <label class="form-label" for="firstName">UserName</label>
+                        </div>
+      
+                      </div>
+                      <div class="col-md-6 mb-4 pb-2">
+      
+                        <div class="form-outline">
+                          <input type="password" id="password" class="form-control form-control-lg" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
+                          <label class="form-label" for="password">password</label><p id="NotValid" style="color: red;font-size: small;"></p>
+                        </div>
+      
+                      </div>
+                      <div class="col-md-6 mb-4 d-flex align-items-center">
+      
+                        <div class="form-outline datepicker w-100">
+                          <input type="date" max ="2020-12-30" class="form-control form-control-lg" id="birth" name="dateOfBirth" required/>
+                          <label for="birthdayDate" class="form-label">Birthday</label>
+                        </div>
+      
+                      </div>
+                      <div class="col-md-6 mb-4">
+      
+                        <h6 class="mb-2 pb-1">Gender: </h6>
+      
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="gender" id="gender1"
+                            value="female"/>
+                          <label class="form-check-label" for="femaleGender">Female</label>
+                        </div>
+      
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="gender" id="gender2"
+                            value="male"/>
+                          <label class="form-check-label" for="maleGender">Male</label>
+                        </div>
+      
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="gender" id="gender3"
+                            value="other" checked/>
+                          <label class="form-check-label" for="otherGender">Other</label>
+                        </div>
+      
+                      </div>
+                   
+                      
+                    </div>
+      
+                    <div class="row">
+                      <div class="col-md-6 mb-4 pb-2">
+      
+                        <div class="form-outline">
+                          <input type="text" id="city" class="form-control form-control-lg" name="city" required/>
+                          <label class="form-label" for="phoneNumber">city</label>
+                        </div>
+      
+                      </div>
+                      <div class="col-md-6 mb-4 pb-2">
+      
+                        <div class="form-outline">
+                          <input type="text" id="country" class="form-control form-control-lg" name="country" required/>
+                          <label class="form-label" for="phoneNumber">country</label>
+                        </div>
+      
+                      </div>
+                      <!-- <div class="col-6">
+      
+                        <select class="select form-control-lg">
+                          <option value="1" disabled>Choose option</option>
+                          <option value="2">Subject 1</option>
+                          <option value="3">Subject 2</option>
+                          <option value="4">Subject 3</option>
+                        </select>
+                        <label class="form-label select-label">Choose option</label>
+      
+                      </div> -->
+                    </div>
+      
+                    <div class="mt-2 pt-2" >
+                      <input class="btn btn-cust btn-lg btn-block" style="font-size:x-large;" id="submit" type="submit" value="Regist" />
+                   
+                      
+                      
+                    </div>
+                    <div>
+                      <p id = "alert" style="color: red;font-size: small;"></p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     <script src="js/app.js"></script>
+</body>
+</html>
