@@ -1,6 +1,6 @@
-let check;
+var check;
 const PostData = async function (url, Data) {
-    check = false;
+    window.check = false;
     const response = await fetch(url, {
         method: 'POST',
         credentials: 'same-origin',
@@ -12,16 +12,26 @@ const PostData = async function (url, Data) {
         return res;
     }
     catch (error) {
-        check = true;
-        alert("error")
-        return check;
+        window.check = true;
+        $("#taken").html("username is taken");
+        $("#taken").css("color", "red");
+        return window.check;
     }
     
 }
-const ValidData = function () {
+const ValidData = async function () {
 
     clearAlerts();
     const username = String($("#username").val());
+    const email = String($("#email").val());
+    const valid = ValidateEmail(email);
+    if (!valid)
+    {
+        $("#ValidEmail").html("please enter valid email");
+        return;
+    }
+    const FirstName = String($("#FirstName").val());
+    const LastName = String($("#LastName").val());
     let gender = "";
     for(var i = 1; i <= 3; i++)
     {
@@ -32,11 +42,11 @@ const ValidData = function () {
         }
 
     }
-    const date = String($("#birth").val() + "T03:50:11.898Z");
+    const date = String($("#birth").val() + "T00:00:00Z");
     const city = String($("#city").val());
     const country = String($("#country").val());
     const password = String($("#password").val());
-    if (!gender || !city || !country || !password || !username) {
+    if (!gender || !city || !country || !password || !username || !email || !FirstName || !LastName) {
         $("#alert").html("*please complete the form")
         return;
     }
@@ -46,23 +56,36 @@ const ValidData = function () {
     }
     PostData('https://routela.somee.com/api/Account/register', {
         "username": username,
+        "email":email,
+        "FirstName":FirstName,
+        "LastName":LastName,
         "gender": gender,
         "dateOfBirth": date,
         "city": city,
         "country": country,
         "password": password
-    });
-    if (check != true)
+    })
+    if (!$("#taken").html())
     {
-         $("#taken").html("registed");
+        $("#taken").html("registed");
+        $("#taken").css("color", "green");
     }
-    else
-    $("#taken").html("username is taken");
+    
+
 }
 const clearAlerts = function () {
     $("#NotValid").html("");
     $("#alert").html("");
     $("#taken").html("");
+    $("#ValidEmail").html("");
 }
 
 $("#submit").click(ValidData)
+function ValidateEmail(mail) 
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+  {
+    return (true)
+  }
+    return (false)
+}
