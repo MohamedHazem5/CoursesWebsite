@@ -1,13 +1,9 @@
 
 .gradient-custom {
-/* fallback for old browsers */
-background: rgba(15, 117, 140, 1);
 
+background-image: url(../images/hero-bg.jpg);
 /* Chrome 10-25, Safari 5.1-6 */
-background: -webkit-linear-gradient(to bottom right, rgba(168, 1, 57, 1), rgba(15, 117, 140, 1));
-
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background: linear-gradient(to bottom right, rgba(168, 1, 57, 1), rgba(15, 117, 140, 1))
+height: fit-content;
 }
 
 .card-registration .select-input.form-control[readonly]:not([disabled]) {
@@ -40,6 +36,7 @@ a:hover{
 }
 .btn-cust1{
 
+    color: #fff;
     background: rgba(15, 117, 140, 1);
     /* Chrome 10-25, Safari 5.1-6 */
     background: -webkit-linear-gradient(to top right, rgba(168, 1, 57, 1), rgba(15, 117, 140, 1));
@@ -61,6 +58,7 @@ a:hover{
 }
 .btn-cust1:hover {
 
+    color: #fff;
     background: rgba(15, 117, 140, 1);
     /* Chrome 10-25, Safari 5.1-6 */
     background: -webkit-linear-gradient(to bottom right, rgba(15, 117, 140, 1),rgba(168, 1, 57, 1));
@@ -72,4 +70,7 @@ a:hover{
 }
 .btn-rad{
     border-radius: 0;
+}
+i{
+    margin: 10px;
 }

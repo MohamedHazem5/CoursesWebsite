@@ -120,6 +120,9 @@ nav{
     color:#fff;
     background-color: #A80139;
 }
+#clone:first-child{
+    display: none;
+}
 .btn {
     color: #ffffff;
     font-size: 16px;
