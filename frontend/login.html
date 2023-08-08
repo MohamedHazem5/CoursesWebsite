@@ -28,57 +28,6 @@
 </head>
 
 <body>
-
-    <!-- <section class="vh-100 gradient-custom">
-        <div class="container py-5 h-100">
-            <div class="row justify-content-center align-items-center h-100">
-                <div class="col-12 col-lg-9 col-xl-7">
-                    <div class="card shadow-2-strong card-registration" style="border-radius: 15px;overflow: hidden;">
-                        <div class="row">
-                            <button class="btn btn-rad btn-cust col-6" style="font-size:x-large;">
-                                <a href="./regist.html">SignUp</a>
-                            </button>
-                            <button class="btn btn-rad btn-cust1 col-6" style="font-size:x-large;"><a
-                                    href="./home.html">Home</a></button>
-                        </div>
-
-                        <div class="card-body p-4 p-md-5">
-                            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Login Form</h3>
-                            <form method="post">
-                                <div class="row">
-                                    <div class="col-md-6 mb-4">
-                                        <div class="form-outline">
-                                            <input type="text" id="username" class="form-control form-control-lg"
-                                                name="username" required />
-                                            <label class="form-label" for="firstName">UserName</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 mb-4 pb-2">
-                                        <div class="form-outline">
-                                            <input type="password" id="password" class="form-control form-control-lg"
-                                                name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
-                                                required />
-                                            <label class="form-label" for="password">Password</label>
-                                            <p id="NotValid" style="color: red;font-size: small;"></p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="mt-2 pt-2">
-                                    <input class="btn btn-cust btn-lg btn-block" style="font-size:x-large;" id="submit"
-                                        type="button" value="Login" />
-                                </div>
-                                <div>
-                                    <p id="alert" style="color: red;font-size: small;"></p>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
     
     <section class="text-center">
         <form class="form-signin" onsubmit="return false">
@@ -96,9 +45,15 @@
                 <input type="checkbox" value="remember-me"> Remember me
                 </label>
             </div>
-            <button class="btn btn-lg btn-primary btn-block submit" type="submit">Sign in</button>
+            <button 
+                class="btn btn-lg btn-primary btn-block submit" 
+                id="signin-btn-submit"
+                type="submit">
+                Sign in
+            </button>
         </form>
     </section>
+
     <script src="js/login.js"></script>
 </body>
 
