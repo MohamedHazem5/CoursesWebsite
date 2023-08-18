@@ -77,7 +77,7 @@
     <div class="course-landing">
         <div class="container">
             <div class="content text-center">
-                <h2 class="fw-bold fs-1">Course Page </h2>
+                <h2 class="fw-bold fs-1" id="courseName">Course Page </h2>
                 <p class="text-black-50 fs-5">Home / Course</p>
             </div>
         </div>
@@ -88,8 +88,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-12">
-                    <div class="course-img">
-                        <img src="./images/course-details.jpg" alt="course-image">
+                    <div class="course-img" style="height: 400px; overflow: hidden;">
+                        <img src="./images/course-details.jpg" alt="course-image" id="myImg">
                     </div>
                     <div class="course-content py-3">
                         <h2 class="fs-3 fw-bold mt-3">Full Stack Web Development Tutorial</h2>
@@ -165,7 +165,7 @@
                                             <i class="fa-solid fa-clock"></i>
                                             Duration
                                         </span>
-                                        <span class="text-black-50">
+                                        <span class="text-black-50" id="duration">
                                             3 Montion
                                         </span>
                                     </li>
@@ -202,7 +202,7 @@
                         </div>
                         <div class="course-instructor widget-style">
                             <div class="widget-title">
-                                <h4>John Doe</h4>
+                                <h4 id="Name">John Doe</h4>
                             </div>
                             <img src="./images/about-widget.png" alt="">
                             <ul class="course-review d-flex">
@@ -239,7 +239,7 @@
                         </div>
                         <div class="course-tags widget-style">
                             <h2>Tags</h2>
-                            <ul>
+                            <ul id="tags">
                                 <li>School</li>
                                 <li>LMS</li>
                                 <li>Course</li>
