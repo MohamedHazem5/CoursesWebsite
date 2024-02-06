@@ -7,6 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoursesWebsite</title>
 
+	<!-- Slick slide -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".regular").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+				speed: 300,
+            });
+        });
+  </script>
     <!-- BootStrap links -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
@@ -21,7 +37,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/magnific-popup.css">
     
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -216,7 +231,7 @@
                             </div>
                             <div class="lessons_content">
                                 <div class="play_button">
-                                    <a href="https://www.youtube.com/embed/ezbJwaLmOeM" onclick="return false;">
+                                    <a href="https://www.youtube.com/embed/Amkg1cdDCpM?si=nGSxRoj5QYRZMOxS" onclick="return false;">
                                         <span>
                                             <i class="fa fa-play"></i>
                                         </span>
@@ -235,7 +250,7 @@
                             </div>
                             <div class="lessons_content">
                                 <div class="play_button">
-                                    <a href="https://www.youtube.com/embed/ezbJwaLmOeM" onclick="return false;">
+                                    <a href="https://www.youtube.com/embed/ezbJwaLmOeM">
                                         <span>
                                             <i class="fa fa-play"></i>
                                         </span>
@@ -269,96 +284,93 @@
                     </div>
                 </div>
             </div>
-            <div class="feedback-slider slick-initialized slick-slider" style="margin-top: 30px;">
-                <div class="slick-list ">
-                    <div class="slick-track" style="opacity: 1; width: 4440px;">
-                        <div class="single_feedback slick-slide " data-slick-index="-2" aria-hidden="true" style="width: 525px;" tabindex="-1">
-                            <span class="quote-icon"><i class="fa fa-quote-right"></i></span>
-                            <div class="reviewer-info d-flex align-items-center">
-                                <div class="reviewer_image" style="margin-right: 20px;">
-                                    <img src="images/student-2.png" alt="image">
-                                </div>
-                                <div class="reviewer_text">
-                                    <h4 class="title">william james</h4>
-                                    <span class="designation">digital marketer</span>
-                                </div>
-                            </div>
-                            <p style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p>
-                        </div>
-                        <div class="single_feedback slick-slide " data-slick-index="-1" aria-hidden="true" style="width: 525px;" tabindex="-1">
-                            <span class="quote-icon"><i class="fa fa-quote-right"></i></span>
-                            <div class="reviewer-info d-flex align-items-center">
-                                <div class="reviewer_image" style="margin-right: 20px;">
-                                    <img src="images/student-1.png" alt="image">
-                                </div>
-                                <div class="reviewer_text">
-                                    <h4 class="title">john doe</h4>
-                                    <span class="designation">UX UI designer</span>
-                                </div>
-                            </div>
-                            <p style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p>
-                        </div>
-                        <div class="single_feedback slick-slide " data-slick-index="0" aria-hidden="true" style="width: 525px;" tabindex="-1">
-                            <span class="quote-icon"><i class="fa fa-quote-right"></i></span>
-                            <div class="reviewer-info d-flex align-items-center">
-                                <div class="reviewer_image" style="margin-right: 20px;">
-                                    <img src="images/men_1.png" alt="image">
-                                </div>
-                                <div class="reviewer_text">
-                                    <h4 class="title">david cooper</h4>
-                                    <span class="designation">web developer</span>
-                                </div>
-                            </div>
-                            <p style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p>
-                        </div>
-                        <div class="single_feedback slick-slide " data-slick-index="1" aria-hidden="false" style="width: 525px;" tabindex="0">
-                            <span class="quote-icon"><i class="fa fa-quote-right"></i></span>
-                            <div class="reviewer-info d-flex align-items-center">
-                                <div class="reviewer_image" style="margin-right: 20px;">
-                                    <img src="images/student-2.png" alt="image">
-                                </div>
-                                <div class="reviewer_text">
-                                    <h4 class="title">william james</h4>
-                                    <span class="designation">digital marketer</span>
-                                </div>
-                            </div>
-                            <p style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p>
-                        </div>
-                        <div class="single_feedback slick-slide " data-slick-index="2" aria-hidden="false" style="width: 525px;" tabindex="0">
-                            <span class="quote-icon"><i class="fa fa-quote-right"></i></span>
-                            <div class="reviewer-info d-flex align-items-center">
-                                <div class="reviewer_image" style="margin-right: 20px;">
-                                    <img src="images/student-1.png" alt="image">
-                                </div>
-                                <div class="reviewer_text">
-                                    <h4 class="title">john doe</h4>
-                                    <span class="designation">UX UI designer</span>
-                                </div>
-                            </div>
-                            <p style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p>
-                        </div>
-                        <div class="single_feedback slick-slide " data-slick-index="3" aria-hidden="true" style="width: 525px;" tabindex="-1">
-                            <span class="quote-icon"><i class="fa fa-quote-right"></i></span>
-                            <div class="reviewer-info d-flex align-items-center">
-                                <div class="reviewer_image " style="margin-right: 20px;">
-                                    <img src="images/men_1.png" alt="image">
-                                </div>
-                                <div class="reviewer_text">
-                                    <h4 class="title">david cooper</h4>
-                                    <span class="designation">web developer</span>
-                                </div>
-                            </div>
-                            <p style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p>
-                        </div>
-                        
-                    </div>
-                </div>
+            <div class="feedback-slider slick-initialized slick-slider " style="margin-top: 30px;">
+                <div class="slick-list regular">
+					<div class="single_feedback slick-slide " data-slick-index="-2" aria-hidden="true" style="width: 525px;" tabindex="-1">
+						<span class="quote-icon"><i class="fa fa-quote-right"></i></span>
+						<div class="reviewer-info d-flex align-items-center">
+							<div class="reviewer_image" style="margin-right: 20px;">
+								<img src="images/student-2.png" alt="image">
+							</div>
+							<div class="reviewer_text">
+								<h4 class="title">william james</h4>
+								<span class="designation">digital marketer</span>
+							</div>
+						</div>
+						<p style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p>
+					</div>
+					<div class="single_feedback slick-slide " data-slick-index="-1" aria-hidden="true" style="width: 525px;" tabindex="-1">
+						<span class="quote-icon"><i class="fa fa-quote-right"></i></span>
+						<div class="reviewer-info d-flex align-items-center">
+							<div class="reviewer_image" style="margin-right: 20px;">
+								<img src="images/student-1.png" alt="image">
+							</div>
+							<div class="reviewer_text">
+								<h4 class="title">john doe</h4>
+								<span class="designation">UX UI designer</span>
+							</div>
+						</div>
+						<p style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p>
+					</div>
+					<div class="single_feedback slick-slide " data-slick-index="0" aria-hidden="true" style="width: 525px;" tabindex="-1">
+						<span class="quote-icon"><i class="fa fa-quote-right"></i></span>
+						<div class="reviewer-info d-flex align-items-center">
+							<div class="reviewer_image" style="margin-right: 20px;">
+								<img src="images/men_1.png" alt="image">
+							</div>
+							<div class="reviewer_text">
+								<h4 class="title">david cooper</h4>
+								<span class="designation">web developer</span>
+							</div>
+						</div>
+						<p style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p>
+					</div>
+					<div class="single_feedback slick-slide " data-slick-index="1" aria-hidden="false" style="width: 525px;" tabindex="0">
+						<span class="quote-icon"><i class="fa fa-quote-right"></i></span>
+						<div class="reviewer-info d-flex align-items-center">
+							<div class="reviewer_image" style="margin-right: 20px;">
+								<img src="images/student-2.png" alt="image">
+							</div>
+							<div class="reviewer_text">
+								<h4 class="title">william james</h4>
+								<span class="designation">digital marketer</span>
+							</div>
+						</div>
+						<p style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p>
+					</div>
+					<div class="single_feedback slick-slide " data-slick-index="2" aria-hidden="false" style="width: 525px;" tabindex="0">
+						<span class="quote-icon"><i class="fa fa-quote-right"></i></span>
+						<div class="reviewer-info d-flex align-items-center">
+							<div class="reviewer_image" style="margin-right: 20px;">
+								<img src="images/student-1.png" alt="image">
+							</div>
+							<div class="reviewer_text">
+								<h4 class="title">john doe</h4>
+								<span class="designation">UX UI designer</span>
+							</div>
+						</div>
+						<p style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p>
+					</div>
+					<div class="single_feedback slick-slide " data-slick-index="3" aria-hidden="true" style="width: 525px;" tabindex="-1">
+						<span class="quote-icon"><i class="fa fa-quote-right"></i></span>
+						<div class="reviewer-info d-flex align-items-center">
+							<div class="reviewer_image " style="margin-right: 20px;">
+								<img src="images/men_1.png" alt="image">
+							</div>
+							<div class="reviewer_text">
+								<h4 class="title">david cooper</h4>
+								<span class="designation">web developer</span>
+							</div>
+						</div>
+						<p style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p>
+					</div>
+				</div>
             </div>
         </div>
     </section>
@@ -730,6 +742,5 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="node_modules/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
-
 </body>
 </html>

@@ -98,12 +98,12 @@ let icon_4 = setInterval(()=>
  * 
  */
 var link = {};
-for (var i = 0; i < 3; i++)
+for (let i = 0; i < 3; i++)
 link[i] = document.getElementsByClassName("play_button")[i].firstElementChild.getAttribute("href").valueOf();
 var iframe = {};
 for (var i = 0; i < 3; i++)
 iframe[i] = document.createElement("div");
-for (var i = 0; i < 3; i++)
+for (let i = 0; i < 3; i++)
 iframe[i].innerHTML = `<div class="mfp-bg mfp-ready"></div>
                         <div class="mfp-wrap mfp-close-btn-in mfp-auto-cursor mfp-ready" tabindex="-1" style="overflow: hidden auto;">
                             <div class="mfp-container mfp-s-ready mfp-iframe-holder">
@@ -119,16 +119,18 @@ iframe[i].innerHTML = `<div class="mfp-bg mfp-ready"></div>
 var buttons = {};
 for (var i = 0; i < 3; i++)
 buttons[i] = document.getElementsByClassName("play_button")[i].firstElementChild;
-var close ;
-for (var i = 0; i < 3; i++)
+
+for (let i = 0; i < 3; i++)
 {
-    buttons[i].addEventListener("click", ()=>{
+	console.log(i);
+    buttons[i].addEventListener("click", (e)=>{
+		e.preventDefault();
         document.body.prepend(iframe[i]);
-        close =  document.getElementsByClassName("mfp-close")[0];
+		var close = document.getElementsByClassName("mfp-close")[0];
         close.addEventListener("click",()=>{
             document.body.removeChild(document.body.firstChild);
-        })
-    })
+        }) 
+    }) 
 }
 
 /*/*//*/*//***//*/*//* */ /*//** */
@@ -136,60 +138,13 @@ for (var i = 0; i < 3; i++)
  * 
  * 
  */
-var track = document.getElementsByClassName("slick-track")[0];
-var i = 0;
-setInterval(()=>{
-    if (i == 0)
-    {
-        let j = 0;
-        let trackint = setInterval(()=>{
-            transform: track.style.transform =  `translate3d(${j}px, 0px, 0px)`;
-            j -= 10 ;
-            if (j < -555)
-                clearInterval(trackint);
-        },18)
-        i = 1;
-    }
-    if ( i == 1)
-    { 
-        let j = -555;
-        let trackint = setInterval(()=>{
-            transform: track.style.transform =  `translate3d(${j}px, 0px, 0px)`;
-            j -= 10 ;
-            if (j < -1110)
-                clearInterval(trackint);
-        },18)
-        i = 2;
-    }
-    else if ( i == 2)
-    { 
-        let j = -1110;
-        let trackint = setInterval(()=>{
-            transform: track.style.transform =  `translate3d(${j}px, 0px, 0px)`;
-            j -= 10 ;
-            if (j < -1665)
-                clearInterval(trackint);
-        },18)
-        i = 3;
-    }
-    else if ( i == 3)
-    { 
-        let j = -1665;
-        let trackint = setInterval(()=>{
-            transform: track.style.transform =  `translate3d(${j}px, 0px, 0px)`;
-            j -= 10 ;
-            if (j < -2220)
-                clearInterval(trackint);
-        },18)
-        i = 0;
-    }  
-},4500);
+
 /*/*//*/*//***//*/*//* */ /*//** */
 /**
  * 
  * 
  */
-var track_blog = document.getElementsByClassName("slick-track")[1];
+var track_blog = document.getElementsByClassName("slick-track")[0];
 var k = 0;
 setInterval(()=>{
     if (k == 0)

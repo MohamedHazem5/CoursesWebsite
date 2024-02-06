@@ -19,6 +19,9 @@ const GetData = async function (url = '') {
     }
 
 }
+
+const lang = ["english","france","arapic"]
+const skill = ["Beginner","Intermediate","Hard","Expert"]
 const BaseURL = "https://routela.somee.com/api"
 const courseDiv = document.getElementById('Course');
 const Course = function () {
@@ -28,14 +31,21 @@ const Course = function () {
             data.forEach(course => {
                 if(course["id"] == $_GET["id"])
                 {
-                    const costDiv = document.getElementById('cost');
-                    costDiv.innerHTML = `$${course["cost"]}`;
-                    const Name = document.getElementById('Name');
-                    Name.innerHTML = course["title"];
-                    const duration = document.getElementById('duration');
-                    duration.innerHTML = `${course['duration']} hours`
-                    const courseName = document.getElementById('courseName');
-                    courseName.innerHTML = course["description"]
+                    const setValue = function(id,value)
+                    {
+                        const costDiv = document.getElementById(id);
+                        costDiv.innerHTML = `${course[value]}`;
+                    }
+                    setValue('cost',"cost");
+                    setValue('Name',"title");
+                    setValue('duration','duration');
+                    setValue('courseName',"title");
+                    setValue('courseName_',"title");
+                    setValue('desc',"description");
+                    const desc = document.getElementById('lang');
+                    desc.innerHTML = lang[course["language"]];
+                    const skill_ = document.getElementById('skill');
+                    skill_.innerHTML = skill[course["skillLevel"]];
                     document.getElementById("myImg").src = course["imageURL"]
                     // const tags = document.getElementById("tags")
                     // let tag_li = document.createElement("li")
