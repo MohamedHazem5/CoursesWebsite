@@ -393,8 +393,8 @@
                     </div>
                 </div>
             </div>
-            <div class="blog_slider slick-initialized slick-slider" style="margin-top: 30px;">
-                <div class="slick-list draggable">
+            <div class="blog_slider slick-initialized slick-slider " style="margin-top: 30px;">
+                <div class="slick-list draggable multiple-items">
                     <div class="slick-track" style="opacity: 1; width: 4070px;">
                         <div class="single-blog slick-slide " data-slick-index="-3" aria-hidden="true" style="width: 340px;" tabindex="-1">
                             <div class="blog_image">
@@ -744,6 +744,13 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="node_modules/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
+	<script>
+		$('.multiple-items').slick({
+			infinite: true,
+			slidesToShow: 3,
+			slidesToScroll: 3
+		});
+	</script>
 
 </body>
 </html>

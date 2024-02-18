@@ -65,6 +65,10 @@ const ValidData = async function () {
         "country": country,
         "password": password
     })
+    .then(Data)
+    {
+        console.log(Data)
+    }
     if (!$("#taken").html())
     {
         $("#taken").html("registed");

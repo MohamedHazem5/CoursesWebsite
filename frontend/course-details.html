@@ -92,8 +92,8 @@
                         <img src="./images/course-details.jpg" alt="course-image" id="myImg">
                     </div>
                     <div class="course-content py-3">
-                        <h2 class="fs-3 fw-bold mt-3">Full Stack Web Development Tutorial</h2>
-                        <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima laudantium, eligendi of ratione, perspiciatis nobis at totam voluptas itaque autem fugit natus, quia dolore nesciunt porro explicabo. Sequi quas nostrum! voluptas itaque autem fugit natus, quia dolore nesciunt.</p>
+                        <h2 class="fs-3 fw-bold mt-3" id="courseName_">Full Stack Web Development Tutorial</h2>
+                        <p class="text-black-50" id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima laudantium, eligendi of ratione, perspiciatis nobis at totam voluptas itaque autem fugit natus, quia dolore nesciunt porro explicabo. Sequi quas nostrum! voluptas itaque autem fugit natus, quia dolore nesciunt.</p>
                         <div class="selection mt-3 py-3">
                             <ul>
                                 <li>
@@ -148,7 +148,7 @@
                             <div class="widget-title">
                                 <h4 class="d-flex justify-content-between mb-4">
                                     <span>Course Fee</span>
-                                    <span class="red" id="cost">290$</span>
+                                    <span><span class="red" id="cost">290 </span><span class="red">$</span></span>
                                 </h4>
                                 <ul>
                                     <li>
@@ -165,8 +165,8 @@
                                             <i class="fa-solid fa-clock"></i>
                                             Duration
                                         </span>
-                                        <span class="text-black-50" id="duration">
-                                            3 Montion
+                                        <span class="text-black-50">
+                                            <span id="duration">3</span> Hours
                                         </span>
                                     </li>
                                     <li>
@@ -174,7 +174,7 @@
                                             <i class="fa-solid fa-pen"></i>
                                             Skill Level
                                         </span>
-                                        <span class="text-black-50">
+                                        <span class="text-black-50" id="skill">
                                             Beginner
                                         </span>
                                     </li>
@@ -192,7 +192,7 @@
                                             <i class="fa-solid fa-language"></i>
                                             Language
                                         </span>
-                                        <span class="text-black-50">
+                                        <span class="text-black-50" id="lang">
                                             English
                                         </span>
                                     </li>
@@ -251,15 +251,16 @@
                 </div>
             </div>
             <!-- Start Courses -->
-            <div class="courses my-5 py-5">
-                <div class="container">
-                    <div class="row justify-content-center count_6" id="Course">
-                        <div class="card col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.5s" style="width: 20rem;" id="clone">
-                        </div>
-                    </div>
+            
+            <!-- End Courses -->
+        </div>
+    </div>
+    <div class="courses my-5 py-5">
+        <div class="container">
+            <div class="row justify-content-center count_6" id="Course">
+                <div class="card col-lg-4 col-md-6 wow fadeIn" data-wow-delay="0.5s" style="width: 20rem;" id="clone">
                 </div>
             </div>
-            <!-- End Courses -->
         </div>
     </div>
 

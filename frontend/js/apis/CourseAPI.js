@@ -7,7 +7,6 @@ const GetData = async function (url = '') {
     catch (error) {
         console.log("error", error)
     }
-
 }
 const BaseURL = "https://routela.somee.com/api"
 const courseDiv = document.getElementById('Course');
